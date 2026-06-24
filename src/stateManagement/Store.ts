@@ -3,10 +3,12 @@ import {useDispatch, useSelector} from 'react-redux';
 import type {TypedUseSelectorHook} from 'react-redux';
 // import HomeSlice from '../screens/homeScreen/HomeSlice';
 
+import authReducer from './slices/authSlice';
 
 export const store = configureStore({
   reducer: {
     // homeReducer: HomeSlice,
+    auth: authReducer,
 
   },
 });
